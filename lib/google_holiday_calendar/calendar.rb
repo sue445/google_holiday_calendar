@@ -11,8 +11,9 @@ module GoogleHolidayCalendar
       @lang    = lang.downcase
     end
 
-    # @param start_date [String,Date] start date ("YYYY-MM-DD" or Date)
-    # @param end_date   [String,Date] end date (not contain this date) ("YYYY-MM-DD" or Date)
+    # get holidays via google calendar
+    # @param start_date [String,Date] start date ("YYYY-MM-DD" or Date). default: current date
+    # @param end_date   [String,Date] end date ("YYYY-MM-DD" or Date). not contain this date. default: 1 month after the start_date
     # @param limit      [Integer]
     # @return [Hash] key: date, value: holiday title
     def holidays(start_date: nil, end_date: nil, limit: 10)
