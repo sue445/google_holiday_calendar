@@ -1,6 +1,6 @@
 # GoogleHolidayCalendar
 
-Get holiday via Google Calendar.
+Get holidays via Google Calendar.
 
 ## Requirements
 * ruby 2.0.0+
