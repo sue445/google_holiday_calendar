@@ -26,12 +26,12 @@ require "google_holiday_calendar"
 
 usa_calendar = GoogleHolidayCalendar::Calendar.new(country: "usa", lang: "en")
 
-usa_calendar.holidays(start_date: "2014-01-01", end_date: "2014-03-01, limit: 5")
+usa_calendar.holidays(start_date: "2014-01-01", end_date: "2014-03-01", limit: 5)
 # => {Wed, 01 Jan 2014=>"New Year's Day", Mon, 20 Jan 2014=>"Martin Luther King Day", Fri, 14 Feb 2014=>"Valentine's Day", Mon, 17 Feb 2014=>"Presidents' Day (Washington's Birthday)"}
 
 japan_calendar = GoogleHolidayCalendar::Calendar.new(country: "japanese", lang: "ja")
 
-japan_calendar.holidays(start_date: "2014-01-01", end_date: "2014-03-01, limit: 5")
+japan_calendar.holidays(start_date: "2014-01-01", end_date: "2014-03-01", limit: 5)
 # => {Wed, 01 Jan 2014=>"元日", Thu, 02 Jan 2014=>"銀行休業日", Fri, 03 Jan 2014=>"銀行休業日", Mon, 13 Jan 2014=>"成人の日", Tue, 11 Feb 2014=>"建国記念の日"}
 ```
 
