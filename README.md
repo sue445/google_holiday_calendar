@@ -1,4 +1,4 @@
-# GoogleHolidayCalendar
+# GoogleHolidayCalendar [![Build Status](https://travis-ci.org/sue445/google_holiday_calendar.png?branch=master)](https://travis-ci.org/sue445/google_holiday_calendar)
 
 Get holidays via Google Calendar.
 
