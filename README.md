@@ -44,7 +44,9 @@ $ date +"%Y-%m-%d"
 
 $ google_holiday_calendar
 2014-03-09: Daylight Saving Time starts
+```
 
+```sh
 # get holidays (2014/01/01 - 2014/07/01)
 $ google_holiday_calendar --start-date=2014-01-01 --end-date=2014-07-01
 2014-01-01: New Year's Day
@@ -57,14 +59,17 @@ $ google_holiday_calendar --start-date=2014-01-01 --end-date=2014-07-01
 2014-05-11: Mothers' Day
 2014-05-26: Memorial Day
 2014-06-15: Fathers' Day
+```
 
+```sh
 # get holidays (with limit)
 $ google_holiday_calendar --start-date=2014-01-01 --end-date=2014-07-01 --limit=3
-google_holiday_calendar --start-date=2014-01-01 --end-date=2014-07-01 --limit=3
 2014-02-14: Valentine's Day
 2014-02-17: Presidents' Day (Washington's Birthday)
 2014-04-13: Thomas Jefferson's Birthday
+```
 
+```sh
 # get holidays (specify country and language)
 $ google_holiday_calendar --start-date=2014-01-01 --end-date=2014-07-01 --country=japanese --lang=ja
 2014-01-01: 元日
