@@ -1,3 +1,31 @@
 #!/usr/bin/env ruby
 
 require 'google_holiday_calendar'
+require 'optparse'
+
+options = {
+    start_date: nil,
+    end_date:   nil,
+    limit:      10,
+    country:    "usa",
+    lang:       "en",
+}
+
+opt = OptionParser.new
+opt.on('--start-date[=YYYY-MM-DD]', 'default: today')         {|v| options[:start_date] = v }
+opt.on('--end-date[=YYYY-MM-DD]'  , 'default: 1 month after') {|v| options[:end_date]   = v }
+opt.on('--limit[=NUM]'            , 'default; 10')            {|v| options[:limit]      = v.to_i }
+opt.on('--country[=COUNTRY]'      , 'default: usa')           {|v| options[:country]    = v }
+opt.on('--lang[=LANG]'            , 'default: en')            {|v| options[:lang]       = v }
+opt.parse!(ARGV)
+
+GoogleHolidayCalendar::Calendar.new(
+    country: options[:country],
+    lang:    options[:lang],
+).holidays(
+    start_date: options[:start_date],
+    end_date:   options[:end_date],
+    limit:      options[:limit],
+).each do |date, title|
+  puts "#{date}: #{title}"
+end
