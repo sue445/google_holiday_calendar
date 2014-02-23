@@ -79,6 +79,9 @@ $ google_holiday_calendar --start-date=2014-01-01 --end-date=2014-07-01 --countr
 2014-05-06: みどりの日 振替休日
 ```
 
+## More reference
+http://rubydoc.info/github/sue445/google_holiday_calendar
+
 ## Contributing
 
 1. Fork it ( http://github.com/sue445/google_holiday_calendar/fork )
