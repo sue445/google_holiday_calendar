@@ -33,6 +33,12 @@ japan_calendar = GoogleHolidayCalendar::Calendar.new(country: "japanese", lang: 
 
 japan_calendar.holidays(start_date: "2014-01-01", end_date: "2014-03-01", limit: 5)
 # => {Wed, 01 Jan 2014=>"元日", Thu, 02 Jan 2014=>"銀行休業日", Fri, 03 Jan 2014=>"銀行休業日", Mon, 13 Jan 2014=>"成人の日", Tue, 11 Feb 2014=>"建国記念の日"}
+
+japan_calendar.holiday?("2014-01-01")
+# => true
+
+japan_calendar.holiday?("2014-02-01")
+# => false
 ```
 
 ## Usage (via bash)
