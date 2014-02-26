@@ -48,7 +48,7 @@ describe GoogleHolidayCalendar::Calendar do
           let(:start_date){ "2014-06-01" }
           let(:end_date)  { "2014-07-01" }
 
-          it{ should  == []}
+          it{ should  == {}}
         end
       end
 

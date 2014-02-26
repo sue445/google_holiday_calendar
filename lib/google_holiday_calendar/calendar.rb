@@ -16,6 +16,7 @@ module GoogleHolidayCalendar
     # @param end_date   [String,Date] end date ("YYYY-MM-DD" or Date). not contain this date. default: 1 month after the start_date
     # @param limit      [Integer]
     # @return [Hash] key: date, value: holiday title
+    # @return [{}]   if found no holidays, return empty hash
     def holidays(start_date: nil, end_date: nil, limit: 10)
       start_date = Date.today unless start_date
       end_date = to_date(start_date) + 1.month unless end_date
@@ -32,7 +33,7 @@ module GoogleHolidayCalendar
       calendar_response = fetch(url)
 
       entries = calendar_response["feed"]["entry"]
-      return [] unless entries
+      return {} unless entries
 
       holidays = entries.inject({}){ |res, entry|
         date = Date.parse(entry["gd$when"][0]["startTime"])
