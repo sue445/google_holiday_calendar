@@ -45,6 +45,13 @@ module GoogleHolidayCalendar
       Hash[holidays.sort_by{|k,v| k }]
     end
 
+    # whether arg is holiday
+    # @param arg [#to_date, String] {Date}, {Time}, or date like String (ex. "YYYY-MM-DD")
+    def holiday?(arg)
+      date = to_date(arg)
+      holidays(start_date: date, end_date: date + 1.day, limit: 1).length > 0
+    end
+
     private
 
     # @param url [String]
@@ -66,6 +73,8 @@ module GoogleHolidayCalendar
     def to_date(arg)
       if arg.is_a?(String)
         Date.parse(arg)
+      elsif arg.respond_to?(:to_date)
+        arg.to_date
       else
         arg
       end

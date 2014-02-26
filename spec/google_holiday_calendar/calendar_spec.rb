@@ -60,4 +60,24 @@ describe GoogleHolidayCalendar::Calendar do
       end
     end
   end
+
+  describe "#holiday?" do
+    subject{ calendar.holiday?(date) }
+
+    let(:calendar){ GoogleHolidayCalendar::Calendar.new(country: country, lang: lang) }
+    let(:country) { "japanese" }
+    let(:lang)    { "ja" }
+
+    context "arg is holiday" do
+      let(:date){ Date.parse("2014-01-01") }
+
+      it{ should be true }
+    end
+
+    context "arg is not holiday" do
+      let(:date){ Date.parse("2014-02-01") }
+
+      it{ should be false }
+    end
+  end
 end
