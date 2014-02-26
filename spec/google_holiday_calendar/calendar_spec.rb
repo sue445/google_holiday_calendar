@@ -43,6 +43,13 @@ describe GoogleHolidayCalendar::Calendar do
 
           it_behaves_like :holidays_in_japan_at_jan
         end
+
+        context "When not found holidays" do
+          let(:start_date){ "2014-06-01" }
+          let(:end_date)  { "2014-07-01" }
+
+          it{ should  == []}
+        end
       end
 
       context "When holidays in America" do

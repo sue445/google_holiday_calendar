@@ -31,7 +31,10 @@ module GoogleHolidayCalendar
 
       calendar_response = fetch(url)
 
-      holidays = calendar_response["feed"]["entry"].inject({}){ |res, entry|
+      entries = calendar_response["feed"]["entry"]
+      return [] unless entries
+
+      holidays = entries.inject({}){ |res, entry|
         date = Date.parse(entry["gd$when"][0]["startTime"])
         title = entry["title"]["$t"]
         res[date] =title
