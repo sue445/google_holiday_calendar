@@ -30,7 +30,7 @@ Or install it yourself as:
 ```ruby
 require "google_holiday_calendar"
 
-usa_calendar = GoogleHolidayCalendar::Calendar.new(country: "usa", lang: "en")
+usa_calendar = GoogleHolidayCalendar::Calendar.new(country: "usa", lang: "en", api_key: "YOUR_API_KEY")
 
 usa_calendar.holidays(start_date: "2014-01-01", end_date: "2014-03-01", limit: 5)
 # => {Wed, 01 Jan 2014=>"New Year's Day", Mon, 20 Jan 2014=>"Martin Luther King Day", Fri, 14 Feb 2014=>"Valentine's Day", Mon, 17 Feb 2014=>"Presidents' Day (Washington's Birthday)"}
