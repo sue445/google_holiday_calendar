@@ -1,8 +1,8 @@
 language: ruby
 rvm:
-  - 2.0.0
-  - 2.1.0
-  - 2.1.1
+- 2.0.0
+- 2.1.0
+- 2.1.1
 branches:
   only:
     - master
@@ -11,3 +11,5 @@ env:
     secure: "PUaG7vOmYf3MhO6KJR7kaOeDk+MiP31JCMI6m47z7y+4SGBj0+pxdYK9CY50McGkjjNajXC6RoNJiaVwlQduLS7mM8WKusGKgtnr/APHtZqbVy+KSXdXLvVD/GPaGxb+W7/SlTj5lLAe75hFj48hMWH2g7qDERmbEksEMqXM8CE="
 notifications:
   email: false
+  slack:
+    secure: LFMFNHkB88zWrcjwRstw7Ri+pKVndjkz11H8r73GbrJOL76Lt4llVsraYLRrCnx859kRZul4SjbUIlYsRl28Wv2IJmIhvDnK9n5gX4nSbEfjrZGsaMOmJhY8MxazM4757TFEY6ugzwRD3hzWKEK6bIY6nRu5KAFaZhPjDbSaEpA=
