@@ -1,14 +1,16 @@
 module GoogleHolidayCalendar
   require 'open-uri'
+  require 'cgi'
 
   class Calendar
     attr_reader :country, :lang
 
     # @param country [String]
     # @param lang    [String]
-    def initialize(country: "usa", lang: "en")
+    def initialize(country: "usa", lang: "en", api_key: nil)
       @country = country.downcase
       @lang    = lang.downcase
+      @api_key = api_key
     end
 
     # get holidays via google calendar
@@ -21,23 +23,24 @@ module GoogleHolidayCalendar
       start_date = Date.today unless start_date
       end_date = to_date(start_date) + 1.month unless end_date
 
-      url = "http://www.google.com/calendar/feeds/#{@country}__#{@lang}@holiday.calendar.google.com/public/full?"
+      calendar_id = "#{@lang}.#{@country}#holiday@group.v.calendar.google.com"
+      url = "https://www.googleapis.com/calendar/v3/calendars/#{CGI.escape(calendar_id)}/events?"
       params = {
-          "alt"         => "json",
-          "start-min"   => to_ymd(start_date),
-          "start-max"   => to_ymd(end_date),
-          "max-results" => limit,
+        "key"         => @api_key,
+        "timeMin"     => to_ymd(start_date),
+        "timeMax"     => to_ymd(end_date),
+        "maxResults" => limit,
       }
       url += params.to_query
 
       calendar_response = fetch(url)
 
-      entries = calendar_response["feed"]["entry"]
+      entries = calendar_response["items"]
       return {} unless entries
 
-      holidays = entries.inject({}){ |res, entry|
-        date = Date.parse(entry["gd$when"][0]["startTime"])
-        title = entry["title"]["$t"]
+      holidays = entries.inject({}){ |res, item|
+        date = Date.parse(item['start']['date'])
+        title = item["summary"]
         res[date] =title
         res
       }
@@ -65,7 +68,7 @@ module GoogleHolidayCalendar
     # @return [String] YYYY-MM-DD
     def to_ymd(arg)
       date = to_date(arg)
-      date.strftime("%Y-%m-%d")
+      date.strftime("%Y-%m-%d") + "T00:00:00Z"
     end
 
     # @param arg [Date,String]

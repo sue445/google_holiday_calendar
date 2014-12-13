@@ -6,5 +6,8 @@ rvm:
 branches:
   only:
     - master
+env:
+  global:
+    secure: "I8jRc8asiM+IORzqqpKTma+azqWrJOYjeoCUNs2dat1NR5XQlrfm+djU/AI1vUxiN8guj8CJtC8lyASUaSq1rjNHSUAYqLoSkl+P7c55WU7sgFn+vxbr9Tr+kGEhtXVcyaiLaXb59W6LxJ1ehiiaDCCIOVv+bbAnYWgxTXKO5B8="
 notifications:
   email: false

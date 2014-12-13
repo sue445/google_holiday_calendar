@@ -31,4 +31,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "yard"
   spec.add_development_dependency "memoist"
   spec.add_development_dependency "coveralls"
+  spec.add_development_dependency "dotenv"
 end

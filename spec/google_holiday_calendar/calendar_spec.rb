@@ -7,13 +7,13 @@ describe GoogleHolidayCalendar::Calendar do
     let(:end_date)  { "2014-01-31" }
 
     context "Without country and lang" do
-      let(:calendar){ GoogleHolidayCalendar::Calendar.new }
+      let(:calendar){ GoogleHolidayCalendar::Calendar.new(api_key: ENV["GOOGLE_API_KEY"]) }
 
       its(:count){ should > 0 }
     end
 
     context "With country and lang" do
-      let(:calendar){ GoogleHolidayCalendar::Calendar.new(country: country, lang: lang) }
+      let(:calendar){ GoogleHolidayCalendar::Calendar.new(country: country, lang: lang, api_key: ENV["GOOGLE_API_KEY"]) }
 
       context "When holidays in Japan" do
         let(:country)   { "japanese" }
@@ -64,7 +64,7 @@ describe GoogleHolidayCalendar::Calendar do
   describe "#holiday?" do
     subject{ calendar.holiday?(date) }
 
-    let(:calendar){ GoogleHolidayCalendar::Calendar.new(country: country, lang: lang) }
+    let(:calendar){ GoogleHolidayCalendar::Calendar.new(country: country, lang: lang, api_key: ENV["GOOGLE_API_KEY"]) }
     let(:country) { "japanese" }
     let(:lang)    { "ja" }
 

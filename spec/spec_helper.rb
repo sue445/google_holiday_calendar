@@ -9,6 +9,8 @@ require 'rspec/its'
 require 'rspec/collection_matchers'
 require 'delorean'
 require 'memoist'
+require 'dotenv'
+Dotenv.load
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
