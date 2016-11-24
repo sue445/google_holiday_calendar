@@ -11,6 +11,7 @@ require 'rspec/its'
 require 'rspec/collection_matchers'
 require 'delorean'
 require 'memoist'
+require 'webmock/rspec'
 require 'dotenv'
 Dotenv.load
 
