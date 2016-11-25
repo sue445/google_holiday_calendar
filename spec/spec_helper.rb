@@ -33,3 +33,11 @@ RSpec.configure do |config|
     end
   end
 end
+
+def spec_dir
+  Pathname(__dir__)
+end
+
+def fixture_dir
+  spec_dir.join("fixtures")
+end

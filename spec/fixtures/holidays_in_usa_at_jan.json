@@ -1,0 +1,102 @@
+{
+  "kind": "calendar#events",
+  "etag": "\"p33oc9te8m72d00g\"",
+  "summary": "Holidays in United States",
+  "updated": "2016-11-24T06:55:59.000Z",
+  "timeZone": "UTC",
+  "accessRole": "reader",
+  "defaultReminders": [],
+  "nextSyncToken": "CMD7yfvnwNACEAAYAQ==",
+  "items": [
+    {
+      "kind": "calendar#event",
+      "etag": "\"2778476760000000\"",
+      "id": "20170101_60o30dr46oo30c1g60o30dr564",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=MjAxNzAxMDFfNjBvMzBkcjQ2b28zMGMxZzYwbzMwZHI1NjQgZW4udXNhI2hvbGlkYXlAdg",
+      "created": "2014-01-09T03:33:00.000Z",
+      "updated": "2014-01-09T03:33:00.000Z",
+      "summary": "New Year's Day",
+      "creator": {
+        "email": "en.usa#holiday@group.v.calendar.google.com",
+        "displayName": "Holidays in United States",
+        "self": true
+      },
+      "organizer": {
+        "email": "en.usa#holiday@group.v.calendar.google.com",
+        "displayName": "Holidays in United States",
+        "self": true
+      },
+      "start": {
+        "date": "2017-01-01"
+      },
+      "end": {
+        "date": "2017-01-02"
+      },
+      "transparency": "transparent",
+      "visibility": "public",
+      "iCalUID": "20170101_60o30dr46oo30c1g60o30dr564@google.com",
+      "sequence": 0
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"2778476760000000\"",
+      "id": "20170102_60o30dr46oo30e1g60o30dr564",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=MjAxNzAxMDJfNjBvMzBkcjQ2b28zMGUxZzYwbzMwZHI1NjQgZW4udXNhI2hvbGlkYXlAdg",
+      "created": "2014-01-09T03:33:00.000Z",
+      "updated": "2014-01-09T03:33:00.000Z",
+      "summary": "New Year's Day observed",
+      "creator": {
+        "email": "en.usa#holiday@group.v.calendar.google.com",
+        "displayName": "Holidays in United States",
+        "self": true
+      },
+      "organizer": {
+        "email": "en.usa#holiday@group.v.calendar.google.com",
+        "displayName": "Holidays in United States",
+        "self": true
+      },
+      "start": {
+        "date": "2017-01-02"
+      },
+      "end": {
+        "date": "2017-01-03"
+      },
+      "transparency": "transparent",
+      "visibility": "public",
+      "iCalUID": "20170102_60o30dr46oo30e1g60o30dr564@google.com",
+      "sequence": 0
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"2778476760000000\"",
+      "id": "20170116_60o30dr56oo30e1g60o30dr564",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=MjAxNzAxMTZfNjBvMzBkcjU2b28zMGUxZzYwbzMwZHI1NjQgZW4udXNhI2hvbGlkYXlAdg",
+      "created": "2014-01-09T03:33:00.000Z",
+      "updated": "2014-01-09T03:33:00.000Z",
+      "summary": "Martin Luther King Day",
+      "creator": {
+        "email": "en.usa#holiday@group.v.calendar.google.com",
+        "displayName": "Holidays in United States",
+        "self": true
+      },
+      "organizer": {
+        "email": "en.usa#holiday@group.v.calendar.google.com",
+        "displayName": "Holidays in United States",
+        "self": true
+      },
+      "start": {
+        "date": "2017-01-16"
+      },
+      "end": {
+        "date": "2017-01-17"
+      },
+      "transparency": "transparent",
+      "visibility": "public",
+      "iCalUID": "20170116_60o30dr56oo30e1g60o30dr564@google.com",
+      "sequence": 0
+    }
+  ]
+}

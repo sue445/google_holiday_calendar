@@ -1,0 +1,42 @@
+{
+  "kind": "calendar#events",
+  "etag": "\"p32sc1q6tmj2d00g\"",
+  "summary": "日本の祝日",
+  "updated": "2016-11-24T10:53:13.000Z",
+  "timeZone": "UTC",
+  "accessRole": "reader",
+  "defaultReminders": [],
+  "nextSyncToken": "CMCw8P6cwdACEAAYAQ==",
+  "items": [
+    {
+      "kind": "calendar#event",
+      "etag": "\"2778544486000000\"",
+      "id": "20170101_60o30d9l64o30c1g60o30dr564",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=MjAxNzAxMDFfNjBvMzBkOWw2NG8zMGMxZzYwbzMwZHI1NjQgamEuamFwYW5lc2UjaG9saWRheUB2",
+      "created": "2014-01-09T12:57:23.000Z",
+      "updated": "2014-01-09T12:57:23.000Z",
+      "summary": "元日",
+      "creator": {
+        "email": "ja.japanese#holiday@group.v.calendar.google.com",
+        "displayName": "日本の祝日",
+        "self": true
+      },
+      "organizer": {
+        "email": "ja.japanese#holiday@group.v.calendar.google.com",
+        "displayName": "日本の祝日",
+        "self": true
+      },
+      "start": {
+        "date": "2017-01-01"
+      },
+      "end": {
+        "date": "2017-01-02"
+      },
+      "transparency": "transparent",
+      "visibility": "public",
+      "iCalUID": "20170101_60o30d9l64o30c1g60o30dr564@google.com",
+      "sequence": 0
+    }
+  ]
+}
