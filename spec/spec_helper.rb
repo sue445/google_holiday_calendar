@@ -10,9 +10,7 @@ require 'rspec'
 require 'rspec/its'
 require 'rspec/collection_matchers'
 require 'delorean'
-require 'memoist'
-require 'dotenv'
-Dotenv.load
+require 'webmock/rspec'
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
@@ -24,11 +22,12 @@ RSpec.configure do |config|
   config.after(:each) do
     back_to_the_present
   end
+end
 
-  config.before(:suite) do
-    class GoogleHolidayCalendar::Calendar
-      extend Memoist
-      memoize :fetch
-    end
-  end
+def spec_dir
+  Pathname(__dir__)
+end
+
+def fixture_dir
+  spec_dir.join("fixtures")
 end

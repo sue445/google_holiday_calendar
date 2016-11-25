@@ -99,14 +99,6 @@ $ google_holiday_calendar --start-date=2014-01-01 --end-date=2014-07-01 --countr
 ## More reference
 http://rubydoc.info/github/sue445/google_holiday_calendar
 
-## Testing
-get api key on [API Console](https://code.google.com/apis/console/) and enable Google Calendar API
-
-```bash
-cp .env.example .env
-vi .env
-```
-
 ## Contributing
 
 1. Fork it ( http://github.com/sue445/google_holiday_calendar/fork )

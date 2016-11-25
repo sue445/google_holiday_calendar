@@ -1,0 +1,12 @@
+{
+  "kind": "calendar#events",
+  "etag": "\"p32kbdk4lmn2d00g\"",
+  "summary": "日本の祝日",
+  "updated": "2016-11-24T10:53:13.000Z",
+  "timeZone": "UTC",
+  "accessRole": "reader",
+  "defaultReminders": [],
+  "nextSyncToken": "CMCw8P6cwdACEAAYAQ==",
+  "items": []
+}
+
