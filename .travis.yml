@@ -1,20 +1,18 @@
 language: ruby
 rvm:
-- 2.0
-- 2.1
-- 2.2.2
-- 2.3.3
-- 2.4.1
-- 2.5.0
-- ruby-head
+  - 2.0
+  - 2.1
+  - 2.2
+  - 2.3
+  - 2.4
+  - 2.5
+  - ruby-head
 cache: bundler
 before_install:
-- gem update --system --no-document
-- gem install bundler -v 1.16.1 --no-document
-before_script:
-- export COVERAGE=true
+  - gem update --system --no-document
+  - gem install bundler --no-document
 script:
-- bundle exec rspec
+  - bundle exec rspec
 branches:
   only:
     - master
@@ -24,5 +22,5 @@ notifications:
     secure: LFMFNHkB88zWrcjwRstw7Ri+pKVndjkz11H8r73GbrJOL76Lt4llVsraYLRrCnx859kRZul4SjbUIlYsRl28Wv2IJmIhvDnK9n5gX4nSbEfjrZGsaMOmJhY8MxazM4757TFEY6ugzwRD3hzWKEK6bIY6nRu5KAFaZhPjDbSaEpA=
 matrix:
   allow_failures:
-  - rvm: ruby-head
+    - rvm: ruby-head
 sudo: false
