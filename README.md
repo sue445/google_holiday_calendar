@@ -24,6 +24,38 @@ Or install it yourself as:
 
     $ gem install google_holiday_calendar
 
+## Getting API key
+### 1. Create GCP project
+https://console.cloud.google.com/projectcreate
+
+![create-project](img/create-project.png)
+
+### 2. Go to credentials
+![dashboard](img/dashboard.png)
+
+### 3. Create credential with API key
+![create-credential](img/create-credential.png)
+
+### 4. Enable restrictions (Optional)
+Click RESTRICT KEY
+
+![api-key-created](img/api-key-created.png)
+
+e.g. "IP addresses" in Application restrictions
+
+![application-restrictions](img/application-restrictions.png)
+
+### 5. Enable calendar API
+Go to Library
+
+![dashboard-library](img/dashboard-library.png)
+
+Search with "Calendar" and enable "Google Calendar API".
+
+![search-apis](img/search-apis.png)
+
+![enable-google-calendar-api](img/enable-google-calendar-api.png)
+
 ## Usage (via ruby)
 
 ```ruby
