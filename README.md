@@ -85,13 +85,13 @@ japan_calendar.holiday?("2014-02-01")
 $ date +"%Y-%m-%d"
 2014-02-24
 
-$ google_holiday_calendar
+$ GOOGLE_API_KEY=xxxx google_holiday_calendar
 2014-03-09: Daylight Saving Time starts
 ```
 
 ```sh
 # get holidays (2014/01/01 - 2014/07/01)
-$ google_holiday_calendar --start-date=2014-01-01 --end-date=2014-07-01
+$ GOOGLE_API_KEY=xxxx google_holiday_calendar --start-date=2014-01-01 --end-date=2014-07-01
 2014-01-01: New Year's Day
 2014-01-20: Martin Luther King Day
 2014-02-14: Valentine's Day
@@ -106,7 +106,7 @@ $ google_holiday_calendar --start-date=2014-01-01 --end-date=2014-07-01
 
 ```sh
 # get holidays (with limit)
-$ google_holiday_calendar --start-date=2014-01-01 --end-date=2014-07-01 --limit=3
+$ GOOGLE_API_KEY=xxxx google_holiday_calendar --start-date=2014-01-01 --end-date=2014-07-01 --limit=3
 2014-02-14: Valentine's Day
 2014-02-17: Presidents' Day (Washington's Birthday)
 2014-04-13: Thomas Jefferson's Birthday
@@ -114,7 +114,7 @@ $ google_holiday_calendar --start-date=2014-01-01 --end-date=2014-07-01 --limit=
 
 ```sh
 # get holidays (specify country and language)
-$ google_holiday_calendar --start-date=2014-01-01 --end-date=2014-07-01 --country=japanese --lang=ja
+$ GOOGLE_API_KEY=xxxx google_holiday_calendar --start-date=2014-01-01 --end-date=2014-07-01 --country=japanese --lang=ja
 2014-01-01: 元日
 2014-01-02: 銀行休業日
 2014-01-03: 銀行休業日
