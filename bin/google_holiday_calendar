@@ -4,11 +4,11 @@ require 'google_holiday_calendar'
 require 'optparse'
 
 options = {
-    start_date: nil,
-    end_date:   nil,
-    limit:      10,
-    country:    "usa",
-    lang:       "en",
+  start_date: nil,
+  end_date:   nil,
+  limit:      10,
+  country:    "usa",
+  lang:       "en",
 }
 
 opt = OptionParser.new
@@ -20,13 +20,13 @@ opt.on('--lang[=LANG]'            , 'default: en')            {|v| options[:lang
 opt.parse!(ARGV)
 
 GoogleHolidayCalendar::Calendar.new(
-    country: options[:country],
-    lang:    options[:lang],
-    api_key: ENV["GOOGLE_API_KEY"],
+  country: options[:country],
+  lang:    options[:lang],
+  api_key: ENV["GOOGLE_API_KEY"],
 ).holidays(
-    start_date: options[:start_date],
-    end_date:   options[:end_date],
-    limit:      options[:limit],
+  start_date: options[:start_date],
+  end_date:   options[:end_date],
+  limit:      options[:limit],
 ).each do |date, title|
   puts "#{date}: #{title}"
 end
