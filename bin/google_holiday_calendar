@@ -22,6 +22,7 @@ opt.parse!(ARGV)
 GoogleHolidayCalendar::Calendar.new(
     country: options[:country],
     lang:    options[:lang],
+    api_key: ENV["GOOGLE_API_KEY"],
 ).holidays(
     start_date: options[:start_date],
     end_date:   options[:end_date],
