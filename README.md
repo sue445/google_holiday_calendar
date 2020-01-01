@@ -1,7 +1,7 @@
 # GoogleHolidayCalendar
 
 [![Gem Version](https://badge.fury.io/rb/google_holiday_calendar.png)](http://badge.fury.io/rb/google_holiday_calendar)
-[![Build Status](https://travis-ci.org/sue445/google_holiday_calendar.png?branch=master)](https://travis-ci.org/sue445/google_holiday_calendar)
+[![Build Status](https://github.com/sue445/google_holiday_calendar/workflows/test/badge.svg?branch=master)](https://github.com/sue445/google_holiday_calendar/actions?query=workflow%3Atest)
 [![Coverage Status](https://coveralls.io/repos/sue445/google_holiday_calendar/badge.png)](https://coveralls.io/r/sue445/google_holiday_calendar)
 [![Code Climate](https://codeclimate.com/github/sue445/google_holiday_calendar.png)](https://codeclimate.com/github/sue445/google_holiday_calendar)
 
