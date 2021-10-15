@@ -31,3 +31,8 @@ if Gem::Version.create(RUBY_VERSION) < Gem::Version.create("2.5.0")
   # NOTE: docile 1.4.0+ requires Ruby 2.5.0+
   gem "docile", "< 1.4.0"
 end
+
+if Gem::Version.create(RUBY_VERSION) < Gem::Version.create("2.3.0")
+  # NOTE: json v2.6.0+ requires Ruby 2.3.0+
+  gem "json", "< 2.6.0"
+end
