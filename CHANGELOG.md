@@ -1,5 +1,11 @@
 ## master
-[full changelog](http://github.com/sue445/google_holiday_calendar/compare/v0.1.1...master)
+[full changelog](http://github.com/sue445/google_holiday_calendar/compare/v0.1.2...master)
+
+## v0.1.2
+[full changelog](http://github.com/sue445/google_holiday_calendar/compare/v0.1.1...v0.1.2)
+
+* Enable MFA requirement for gem releasing
+  * https://github.com/sue445/google_holiday_calendar/pull/37
 
 ## v0.1.1
 [full changelog](http://github.com/sue445/google_holiday_calendar/compare/v0.1.0...v0.1.1)
