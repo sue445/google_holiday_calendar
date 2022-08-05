@@ -41,4 +41,7 @@ if Gem::Version.create(RUBY_VERSION) < Gem::Version.create("2.3.0")
 
   # NOTE: webrick v1.4.0+ requires Ruby 2.3.0+
   gem "webrick", "< 1.4.0"
+
+  # NOTE: webmock v3.15.0+ requires Ruby 2.3+
+  gem "webmock", "< 3.15.0"
 end
