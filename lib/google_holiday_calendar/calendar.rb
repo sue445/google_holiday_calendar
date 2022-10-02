@@ -49,7 +49,7 @@ module GoogleHolidayCalendar
     end
 
     # whether arg is holiday
-    # @param arg [#to_date, String] {Date}, {Time}, or date like String (ex. "YYYY-MM-DD")
+    # @param arg [#to_date, String] `Date`, `Time`, or date like String (ex. "YYYY-MM-DD")
     def holiday?(arg)
       date = to_date(arg)
       holidays(start_date: date, end_date: date + 1.day, limit: 1).length > 0
