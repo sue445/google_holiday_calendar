@@ -128,7 +128,7 @@ $ GOOGLE_API_KEY=xxxx google_holiday_calendar --start-date=2014-01-01 --end-date
 ```
 
 ## More reference
-http://rubydoc.info/github/sue445/google_holiday_calendar
+https://sue445.github.io/google_holiday_calendar/
 
 ## Contributing
 
