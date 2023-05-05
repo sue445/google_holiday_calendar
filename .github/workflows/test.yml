@@ -14,7 +14,8 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
+    runs-on: ${{ (matrix.runner != '' && matrix.runner) || 'ubuntu-latest' }}
 
     strategy:
       fail-fast: false
@@ -32,6 +33,11 @@ jobs:
           - "3.0"
           - "3.1"
           - "3.2"
+
+        include:
+          # ref. https://github.com/ruby/setup-ruby/issues/496#issuecomment-1520662740
+          - ruby: "2.2"
+            runner: ubuntu-20.04
 
     steps:
       - uses: actions/checkout@v3
