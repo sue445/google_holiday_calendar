@@ -3,6 +3,9 @@ if ENV["CI"]
   Coveralls.wear!
 end
 
+# FIXME: NameError: uninitialized constant ActiveSupport::LoggerThreadSafeLevel::Logger when activesupport < 7.1
+require "logger"
+
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'google_holiday_calendar'
 
