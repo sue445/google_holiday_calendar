@@ -3,7 +3,7 @@
 [![Gem Version](https://badge.fury.io/rb/google_holiday_calendar.png)](http://badge.fury.io/rb/google_holiday_calendar)
 [![test](https://github.com/sue445/google_holiday_calendar/actions/workflows/test.yml/badge.svg)](https://github.com/sue445/google_holiday_calendar/actions/workflows/test.yml)
 [![Coverage Status](https://coveralls.io/repos/sue445/google_holiday_calendar/badge.png)](https://coveralls.io/r/sue445/google_holiday_calendar)
-[![Code Climate](https://codeclimate.com/github/sue445/google_holiday_calendar.png)](https://codeclimate.com/github/sue445/google_holiday_calendar)
+[![Maintainability](https://qlty.sh/gh/sue445/projects/google_holiday_calendar/maintainability.svg)](https://qlty.sh/gh/sue445/projects/google_holiday_calendar)
 
 Get holidays via Google Calendar.
 
