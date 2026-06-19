@@ -52,3 +52,7 @@ if Gem::Version.create(RUBY_VERSION) < Gem::Version.create("2.7.0")
   gem "term-ansicolor", "< 1.9.0"
 end
 
+if Gem::Version.new(RUBY_VERSION) < Gem::Version.new("3.2.0")
+  # NOTE: i18n 1.15.0+ requires Ruby 3.2+
+  gem "i18n", "< 1.15.0"
+end
