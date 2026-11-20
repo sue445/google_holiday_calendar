@@ -14,7 +14,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: ${{ case(inputs.ruby < '2.3', 'ubuntu-24.04', 'ubuntu-latest') }}
 
     strategy:
       fail-fast: false
